@@ -1,5 +1,64 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/********** CONTENITORE TOTALE *************/
+
+#container {
+    height: 100vh;
+    background-color: gray;
+    border: 1px solid blue;
+}
+
+/********** UTILITIES *************/
+
+.flex {
+    display: flex;
+}
+
+/********** STRUTTURA LAYOUT *************/
+
+main {
+    width: 100%;
+    background-color: green;
+    border: 1px solid yellow;
+}
+
+nav {
+    background-color: black;
+    border: 1px solid orange;
+}
+
+header {
+    background-color: lightcoral;
+}
+
+section {
+    background-color: blueviolet;
+}
+
+footer {
+    background-color: deeppink;
+}
+
+/**********  NAV *************/
+
+nav{
+    color: white;
+}
+
+/********** HEADER  *************/
+
+header{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+/**********  FOOTER  *************/
+
+footer{
+    width: 100%;
+    justify-content: space-between;
 }
