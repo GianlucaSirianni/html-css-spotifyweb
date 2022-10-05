@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 /********** CONTENITORE TOTALE *************/
@@ -30,16 +32,24 @@ nav {
     background-color: black;
     border: 1px solid orange;
     color: white;
+    height: 90vh;
+    /* display: inline-block; */
 }
 
 header {
-    background-color: lightcoral;
+    background-color: black;
     /* height: 10vh; */
     width: 100%;
     justify-content: flex-end;
     position: relative;
     position: sticky;
     top: 0;
+    z-index: 1;
+    opacity: 60%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 0.5rem;
+    
 }
 
 section {
@@ -57,18 +67,81 @@ footer {
 }
 
 /**********  NAV *************/
+.navSection{
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.logoContainer img{
+    padding-bottom: 1rem;
+}
+
+.topNav{
+    padding: 1rem;
+}
+
+.homeList li{
+    margin-bottom: 1rem;
+}
+
+.playlistTitle{
+    margin-bottom: 1rem;
+}
+
+.createPlaylist{
+    margin-bottom: 1rem;
+}
+
+.playlistName li{
+    line-height: 2rem;
+}
+
+.bottomNav{
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+.navLine{
+    height: 2px;
+    background-color: rgb(54, 51, 51);
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
 
 
 /********** HEADER  *************/
 
+.upgrade{
+    color: white;
+    border-radius: 25px;
+    background-color: black;
+    padding: 0.7rem;
+    
+    border:2px solid white;
+}
+
+
+/**********  CONTENTS  *************/
+
+.contentCategories{
+    width: 70%;
+    margin: auto; 
+    justify-content: space-between; 
+    color: gray;  
+}
+
+.contentCategories div{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
 
 
 
 /**********  FOOTER  *************/
 
-/* .debug{
-    overflow-x: hidden;
-    overflow-y: auto;
+.principal{
+    /* height: 90vh; */
     overflow: auto;
-} */
+} 
