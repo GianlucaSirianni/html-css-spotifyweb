@@ -80,19 +80,46 @@ footer {
     padding: 1rem;
 }
 
-.homeList li{
-    margin-bottom: 1rem;
+/* HSL */
+.home{
+    display: flex;
+    margin-bottom: 0.5rem;
 }
 
+.home div,
+.home img{
+    width: 15%;
+}
+
+.homeDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.5rem;
+}
+
+
+
+/* PLAYLIST */
+
 .playlistTitle{
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .createPlaylist{
     margin-bottom: 1rem;
+    display: flex;
 }
 
-.playlistName li{
+.createPlaylistDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.5rem;
+}
+
+.playlistName div{
     line-height: 2rem;
 }
 
@@ -100,6 +127,10 @@ footer {
     flex-direction: column;
     align-items: flex-end;
     padding: 1rem;
+}
+
+.fa-square-plus{
+    font-size: 2rem;
 }
 
 .navLine{
@@ -183,6 +214,30 @@ footer {
 .createdForTitle h5{
     padding-left: 10px;
 }
+
+/* ALBUM 3 */
+
+.popular{
+    padding: 1rem;
+}
+
+.album3{
+    width: calc(100% / 4);
+    text-align: center;
+}
+
+.album3 img{
+    padding: 10px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.popularTitle h2,
+.popularTitle h5{
+    padding-left: 10px;
+}
+
+
 
 
 /**********  FOOTER  *************/
