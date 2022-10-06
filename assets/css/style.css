@@ -11,8 +11,13 @@
 #container {
     height: 100vh;
     background-color: gray;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
+
+.principal{
+    /* height: 90vh; */
+    overflow: auto;
+} 
 
 /********** UTILITIES *************/
 
@@ -25,12 +30,12 @@
 main {
     width: 100%;
     background-color: green;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 nav {
     background-color: black;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     color: white;
     height: 90vh;
     /* display: inline-block; */
@@ -55,7 +60,7 @@ header {
 section {
     background-color: blueviolet;
     height: 90vh;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     width: 100%;
 }
 
@@ -137,27 +142,29 @@ footer {
 
 .installApp{
     display: flex;
+    
 }
 
 
 .installApp img{
     width: 8%;
 }
-.installApp div{
+/* .installApp div{
     width: 25%;
-}
+} */
 
 .appDiv{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 0.5rem;
-    width: 50%;
+    width: 100%;
 }
 
 
 .appDiv {
     font-size: 0.9rem;
+    width: auto;
 }
 
 .navLine{
@@ -271,7 +278,62 @@ footer {
 
 /**********  FOOTER  *************/
 
-.principal{
-    /* height: 90vh; */
-    overflow: auto;
-} 
+
+
+/* LEFT FOOTER */
+
+.leftFooter{
+    width: 20%;
+}
+
+.currentSong{
+    display: flex;
+    justify-content: space-between;
+}
+
+.song{
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.song img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.songTitle{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 1rem; */
+}
+
+.leftFooterIcons{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center; 
+}
+
+.fa-heart,
+.fa-folder{
+    padding: 0.3rem;
+}
+
+
+/* CENTER FOOTER */
+
+.centerFooter{
+    width: 45%;
+}
+
+
+/* RIGHT FOOTER */
+
+.rightFooter{
+    width: 20%;
+}
+
