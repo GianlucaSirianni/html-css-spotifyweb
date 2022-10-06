@@ -133,10 +133,56 @@ footer {
 
 .contentCategories div{
     margin-top: 1rem;
-    margin-bottom: 1rem;
-    
+    margin-bottom: 1rem;  
 }
 
+.contentCategories p{
+    font-size: 0.8rem;
+}
+
+.recentlyPlayed{
+    padding: 1rem;
+}
+
+
+.albumsContainer{
+    flex-wrap: wrap;
+}
+
+.album{
+    width: calc(100% / 4);
+    text-align: center;
+}
+
+.album img{
+    padding: 10px;
+    width: 100%;
+}
+
+.recentlyTitle h2{
+    padding-left: 10px;
+}
+
+/* ALBUM 2 */
+
+.createdFor{
+    padding: 1rem;
+}
+
+.album2{
+    width: calc(100% / 4);
+    text-align: center;
+}
+
+.album2 img{
+    padding: 10px;
+    width: 100%;
+}
+
+.createdForTitle h2,
+.createdForTitle h5{
+    padding-left: 10px;
+}
 
 
 /**********  FOOTER  *************/
