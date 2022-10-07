@@ -22,6 +22,10 @@
     overflow: auto;
 } 
 
+.principal::-webkit-scrollbar {
+    display: none;
+  }
+
 /********** UTILITIES *************/
 
 .flex {
@@ -257,6 +261,7 @@ footer {
 
 .recentlyTitle h2{
     padding-left: 10px;
+    margin-bottom: 1rem;
 }
 
 /* ALBUM 2 */
@@ -276,7 +281,11 @@ footer {
 }
 
 .createdForTitle{
-    margin-bottom: 3px;
+    margin-bottom: 1rem;
+}
+
+.createdForTitle h2{
+    margin-bottom: 0.5rem;
 }
 
 .createdForTitle h2,
@@ -306,8 +315,12 @@ footer {
     padding-left: 10px;
 }
 
+.popularTitle h2{
+    margin-bottom: 0.5rem;
+}
+
 .popularTitle{
-    margin-bottom: 3px;
+    margin-bottom: 1rem;
 }
 
 
@@ -458,6 +471,21 @@ footer {
 }
 
 
+/********************************
+    HOVERS
+************************************/
+
+
+
+
+/********************************
+    HOVERS
+************************************/
+
+
+
+
+
 @media screen and (max-width: 1024px){
     
     /* CONTENTS */
@@ -482,6 +510,12 @@ footer {
 
 @media screen and (max-width: 768px){
     
+    /* HEADER */
+
+    .upgrade {
+        font-size: 0.7rem;
+    }
+
     /* CONTENTS */
 
     .album {
@@ -535,6 +569,12 @@ footer {
 
 @media screen and (max-width: 425px){
     
+    /* HEADER */
+
+    .upgrade {
+        padding: 0.5rem;
+        font-size: 0.5rem;
+    }
 
     /* NAV */
 
