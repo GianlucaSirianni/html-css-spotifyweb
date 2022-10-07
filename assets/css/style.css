@@ -191,7 +191,6 @@ footer {
     border-radius: 25px;
     background-color: black;
     padding: 0.7rem;
-    
     border:2px solid white;
 }
 
@@ -201,21 +200,29 @@ footer {
 .contentCategories{
     width: 70%;
     margin: auto; 
-    justify-content: space-between; 
+    justify-content: center; 
     color: gray;  
-}
-
-.contentCategories div{
     margin-top: 1rem;
-    margin-bottom: 1rem;  
+    margin-bottom: 1rem; 
 }
 
-.contentCategories p{
-    font-size: 0.8rem;
+.contentCategories li{
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    padding-bottom: 40px;
+    width: auto;
+    flex-basis: calc(100% / 6);
+    justify-content: center;  
 }
+
+/* .contentCategories h5{
+    font-size: 0.8rem;
+} */
 
 .recentlyPlayed{
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
 }
 
 
@@ -388,10 +395,27 @@ footer {
     margin-top: 10px;
 }
 
+/* 
 .playIcons i{
     margin-left: 5px;
     margin-right: 5px;
     font-size: 1.2rem;
+} */
+
+.fa-shuffle,
+.fa-backward-step,
+.fa-forward-step,
+.fa-arrow-rotate-right{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1.2rem;
+}
+
+.fa-circle-play{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 2rem;
+    margin-top: -5px;
 }
 
 
@@ -423,3 +447,25 @@ footer {
     margin-right: 0.25rem;
 }
 
+@media screen and (max-width: 1324px){
+    
+    /***** CONTENTS *****/
+
+    .contentCategories{
+        width: 90%;
+        text-align: center;
+        flex-wrap: wrap;
+        /* flex-basis: calc(100% / 5) */
+    }
+
+    .contentCategories div{
+        width: auto;
+        flex-basis: calc(100% / 5);
+        justify-content: center; 
+    }
+
+    .contentCategories h5{
+        text-align: center;
+    }
+
+}
