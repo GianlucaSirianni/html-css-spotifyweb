@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /********** CONTENITORE TOTALE *************/
@@ -36,7 +39,7 @@ main {
 nav {
     background-color: black;
     /* border: 1px solid orange; */
-    color: white;
+    color: grey;
     height: calc(100vh - 100px)
     /* display: inline-block; */
 }
@@ -58,17 +61,19 @@ header {
 }
 
 section {
-    background-color: blueviolet;
+    background-color: rgb(20, 25, 34);
     height: calc(100vh - 100px);
     /* border: 5px solid red; */
     width: 100%;
+    color: white;
 }
 
 footer {
-    background-color: deeppink;
+    background-color: rgb(36, 35, 35);
     height: 100px;
     width: 100%;
     justify-content: space-between;
+    color: white;
 }
 
 /**********  NAV *************/
@@ -223,6 +228,11 @@ footer {
     text-align: center;
 }
 
+.album h6{
+    color: gray;
+    padding-top: 3px;
+}
+
 .album img{
     padding: 10px;
     width: 100%;
@@ -246,6 +256,10 @@ footer {
 .album2 img{
     padding: 10px;
     width: 100%;
+}
+
+.createdForTitle{
+    margin-bottom: 3px;
 }
 
 .createdForTitle h2,
@@ -275,7 +289,9 @@ footer {
     padding-left: 10px;
 }
 
-
+.popularTitle{
+    margin-bottom: 3px;
+}
 
 
 /**********  FOOTER  *************/
