@@ -261,6 +261,9 @@ footer {
     flex-wrap: wrap;
 }
 
+.album{
+    overflow-y: auto;
+}
 
 .albumImgContainer{
     width: 100%;
@@ -510,6 +513,7 @@ footer {
 /********************************
     HOVERS
 ************************************/
+
 
 .home:hover .homeDiv{
     color: white;
@@ -797,6 +801,56 @@ footer {
     }
     
     
+
+}
+
+
+@media screen and (max-width: 400px){
+
+        /* CONTENTS */
+
+        .album {
+            width: calc(100% / 1);
+            text-align: center;
+        }
+    
+        .album2 {
+            width: calc(100% / 1);
+            text-align: center;
+        }
+    
+        .album3 {
+            width: calc(100% / 1);
+            text-align: center;
+        }
+
+        /* FOOTER LEFT*/
+        
+        .leftFooter{
+            flex-direction: column;
+        }
+
+
+        .currentSong{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .songTitle{
+            margin-left: 10px;
+        }
+
+        .leftFooterIcons{
+            display: none;
+        }
+
+        /* FOOTER RIGHT */
+
+        .volume input{
+            display: none;
+        }
+
 
 }
 
