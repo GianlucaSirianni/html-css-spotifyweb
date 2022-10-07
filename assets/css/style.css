@@ -125,6 +125,7 @@ footer {
 .playlistTitle{
     margin-top: 1rem;
     margin-bottom: 1rem;
+    color: white;
 }
 
 .createPlaylist{
@@ -361,6 +362,10 @@ footer {
     /* padding: 1rem; */
 }
 
+.songTitle h6{
+    color: gray;
+}
+
 .leftFooterIcons{
     display: flex;
     /* flex-direction: column; */
@@ -475,11 +480,66 @@ footer {
     HOVERS
 ************************************/
 
+.home:hover .homeDiv{
+    color: white;
+}
 
+.createPlaylist:hover{
+    color: white;
+}
 
+.playlistName div:hover{
+    color: white;
+}
+
+.installApp:hover{
+    color: white;
+}
+
+.wrap li:hover{
+    color: white;
+}
+
+.upgrade:hover{
+    color: black;
+    border-radius: 25px;
+    background-color: rgb(30, 215, 96);
+    padding: 0.7rem;
+    border:2px solid white;
+    font-weight: bold;
+}
+
+.songTitle h5:hover{
+    text-decoration: underline;
+}
+
+.songTitle h6:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.fa-circle-play:hover{
+    font-weight: bold;
+}
+
+.fa-list:hover,
+.fa-display:hover,
+.fa-volume-high:hover,
+.fa-shuffle:hover,
+.fa-backward-step:hover,
+.fa-forward-step:hover,
+.fa-arrow-rotate-right{
+    font-weight: bold;
+}
+
+/* .fa-heart,
+.fa-folder{
+    padding: 0.3rem;
+}
+ */
 
 /********************************
-    HOVERS
+    HOVERS END
 ************************************/
 
 
