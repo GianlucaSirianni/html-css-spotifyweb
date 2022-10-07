@@ -221,6 +221,22 @@ footer {
     flex-wrap: wrap;
 }
 
+.wrap a{
+    color: grey;
+}
+
+.greenUnderline{
+    height: 1px;
+    width: 50px;
+    background-color: greenyellow;
+    margin: auto;
+}
+
+.greenUnderline{
+    display: none;
+}
+
+
 .contentCategories li{
     margin-right: 0.5rem;
     margin-left: 0.5rem;
@@ -377,6 +393,11 @@ footer {
     padding: 0.3rem;
 }
 
+/* .redHeart{
+    display: none;
+    background-color: red;
+} */
+
 
 /* CENTER FOOTER */
 
@@ -496,8 +517,9 @@ footer {
     color: white;
 }
 
-.wrap li:hover{
+.wrap a:hover{
     color: white;
+
 }
 
 .upgrade:hover{
@@ -522,21 +544,25 @@ footer {
     font-weight: bold;
 }
 
-.fa-list:hover,
-.fa-display:hover,
-.fa-volume-high:hover,
-.fa-shuffle:hover,
-.fa-backward-step:hover,
-.fa-forward-step:hover,
-.fa-arrow-rotate-right{
-    font-weight: bold;
+.fa-list:hover{
+    font-weight: bolder;
 }
 
-/* .fa-heart,
-.fa-folder{
-    padding: 0.3rem;
+.fa-heart:hover{
+    color: red;
 }
- */
+
+.fa-folder:hover{
+    color: darkgoldenrod;
+}
+
+.prova1:hover .greenUnderline{
+    display: block;
+}
+
+
+
+
 
 /********************************
     HOVERS END
