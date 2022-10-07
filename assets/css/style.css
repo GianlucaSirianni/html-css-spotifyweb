@@ -87,6 +87,10 @@ footer {
     width: 60%;
 }
 
+#logoSmall{
+    display: none;
+}
+
 .topNav{
     padding: 1rem;
     overflow: hidden;
@@ -200,11 +204,11 @@ footer {
 .contentCategories{
     width: 100%;
     margin: auto; 
-    /* justify-content: center; */ 
+    justify-content: center; 
     color: gray;  
     margin-top: 1rem;
     margin-bottom: 1rem; 
-    text-align: center;
+    /* text-align: center; */
 }
 
 .wrap{
@@ -216,9 +220,9 @@ footer {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
     padding-bottom: 40px;
-    width: auto;
-    flex-basis: calc(100% / 6);
-    justify-content: center;  
+    /* width: auto; */
+    /* flex-basis: calc(100% / 6); */
+    /* justify-content: center;   */
 }
 
 /* .contentCategories h5{
@@ -237,7 +241,7 @@ footer {
 }
 
 .album{
-    width: calc(100% / 4);
+    width: calc(100% / 6);
     text-align: center;
 }
 
@@ -262,7 +266,7 @@ footer {
 }
 
 .album2{
-    width: calc(100% / 4);
+    width: calc(100% / 6);
     text-align: center;
 }
 
@@ -287,7 +291,7 @@ footer {
 }
 
 .album3{
-    width: calc(100% / 4);
+    width: calc(100% / 6);
     text-align: center;
 }
 
@@ -453,25 +457,197 @@ footer {
     margin-right: 0.25rem;
 }
 
-@media screen and (max-width: 1324px){
+
+@media screen and (max-width: 1024px){
     
-    /***** CONTENTS *****/
+    /* CONTENTS */
 
-    .contentCategories{
-        width: 90%;
+    .album {
+        width: calc(100% / 4);
         text-align: center;
-        flex-wrap: wrap;
-        /* flex-basis: calc(100% / 5) */
     }
 
-    .contentCategories div{
-        width: auto;
-        flex-basis: calc(100% / 5);
-        justify-content: center; 
+    .album2 {
+        width: calc(100% / 4);
+        text-align: center;
     }
 
-    .contentCategories h5{
+    .album3 {
+        width: calc(100% / 4);
         text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 768px){
+    
+    /* CONTENTS */
+
+    .album {
+        width: calc(100% / 2);
+        text-align: center;
+    }
+
+    .album2 {
+        width: calc(100% / 2);
+        text-align: center;
+    }
+
+    .album3 {
+        width: calc(100% / 2);
+        text-align: center;
+    }
+
+
+}
+
+
+@media screen and (max-width: 700px){
+
+    footer{
+        font-size: smaller;
+    }
+    
+    .leftFooterIcons i{
+        font-size: smaller;
+    }
+    
+    .song img{
+        width: 45px;
+        height: 45px;
+    }
+    
+    .songBar{
+        width: 150px;
+    }
+    
+    .volume input{
+        width: 70px;
+    }
+    
+    .song {
+        margin-left: 5px;
+        padding: 5px;
     }
 
 }
+
+@media screen and (max-width: 425px){
+    
+
+    /* NAV */
+
+    #logoBig{
+        display: none;
+    }
+
+    #logoSmall{
+        display: block;
+    }
+
+    .logoContainer img{
+        padding-bottom: 1rem;
+        width: 50%;
+    }
+
+    .homeDiv{
+        display: none;
+    }
+
+    .playlistTitle{
+        display: none;
+    }
+
+    .createPlaylist{
+        display: none;
+    }
+
+    .playlistName{
+        display: none;
+    }
+
+    .appDiv{
+        display: none;
+    }
+
+    .navLine{
+        display: none;
+    }
+
+    .installApp{
+        margin-bottom: 5px;
+    }
+
+    .navSection {
+        width: 100px;
+    }
+
+    .home img {
+        width: 50%;
+    }
+
+    .installApp img {
+        width: 40%;
+    }
+
+    /* HEADER */
+
+    .contentCategories li{
+        font-size: smaller;
+    }
+
+
+    /* CONTENTS */
+
+    .album {
+        width: calc(100% / 2);
+        text-align: center;
+    }
+
+    .album2 {
+        width: calc(100% / 2);
+        text-align: center;
+    }
+
+    .album3 {
+        width: calc(100% / 2);
+        text-align: center;
+    }
+
+
+    /****** FOOTER ******/
+
+    footer{
+        font-size: smaller;
+    }
+
+    .leftFooterIcons i{
+        font-size: smaller;
+    }
+
+    .song img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .songBar{
+        width: 80px;
+    }
+
+    .volume input{
+        width: 50px;
+    }
+
+    .song {
+        margin-left: 5px;
+        padding: 5px;
+    }
+    
+    
+
+}
+
+
+
+
