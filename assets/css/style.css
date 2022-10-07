@@ -198,12 +198,18 @@ footer {
 /**********  CONTENTS  *************/
 
 .contentCategories{
-    width: 70%;
+    width: 100%;
     margin: auto; 
-    justify-content: center; 
+    /* justify-content: center; */ 
     color: gray;  
     margin-top: 1rem;
     margin-bottom: 1rem; 
+    text-align: center;
+}
+
+.wrap{
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .contentCategories li{
