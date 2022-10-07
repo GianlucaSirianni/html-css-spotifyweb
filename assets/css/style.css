@@ -261,7 +261,15 @@ footer {
     flex-wrap: wrap;
 }
 
+
+.albumImgContainer{
+    width: 100%;
+    position: relative;
+}
+
+
 .album{
+    position: relative;
     width: calc(100% / 6);
     text-align: center;
 }
@@ -271,10 +279,12 @@ footer {
     padding-top: 3px;
 }
 
-.album img{
+.albumImgContainer img{
     padding: 10px;
     width: 100%;
 }
+
+
 
 .recentlyTitle h2{
     padding-left: 10px;
@@ -560,7 +570,23 @@ footer {
     display: block;
 }
 
+.albumImgContainer:hover img{
+    filter: opacity(50%);
 
+}
+
+.albumPlay{
+    font-size: 5rem;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+
+.albumImgContainer:hover .albumPlay{
+    display: block;
+}
 
 
 
