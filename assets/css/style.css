@@ -50,7 +50,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-    opacity: 60%;
+    opacity: 75%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 0.5rem;
@@ -79,7 +79,7 @@ footer {
 
 .logoContainer img{
     padding-bottom: 1rem;
-    width: 70%;
+    width: 60%;
 }
 
 .topNav{
